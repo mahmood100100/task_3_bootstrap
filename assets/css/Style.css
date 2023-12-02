@@ -1,0 +1,120 @@
+:root{
+    --mainColor: #ff206e;
+}
+.header .container .header-content a{
+    color: var(--mainColor);
+}
+.header{
+    background-image: url(../img/bg_osaka.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    transition: background-color 1s,border 1s;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: var(--mainColor);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover{
+    color: var(--mainColor);
+}
+.about{
+    background-image: url(../img/light_dot.jpg);
+}
+.title h2{
+    font-size: 4rem;
+    color: #cacaca;
+    font-weight: 900;
+    letter-spacing: 20px;
+}
+.title h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.content a{
+    color: var(--mainColor);
+}
+.content p:first-of-type{
+    color: var(--mainColor);
+}
+.services{
+    background-image: url(../img/dark_dot.jpg);
+}
+.services .title h2 {
+    color: #222;
+}
+.item h1::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    left: 50%;
+    top: 52px;
+    transform: translate(-50%);
+    background-color: var(--mainColor);
+    transition: width 1s;
+}
+@media screen and   (max-width: 576px) {
+    .item h1::after{
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 2px;
+        left: 50%;
+        top: 40px;
+        transform: translate(-50%);
+        background-color: var(--mainColor);
+        transition: width 1s;
+    }
+}
+.item:hover h1::after{
+   width:70%;
+}
+.app{
+    margin-bottom: 35px;
+}
+.services-item .item .icon i {
+    transition: color 1s;
+}
+.services-item .item .icon:hover i {
+    color: var(--mainColor) !important;
+}
+.customer img{
+    height: 110px;
+    width: 110px;
+}
+.carousel-indicators [data-bs-target] {
+    height: 30px;
+    border-radius: 50%;
+    text-indent: 0 ;
+}
+.carousel-indicators [data-bs-target] img {
+    height: 30px;
+    width: 30px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    background-color: rgb(0, 0, 0);
+}
+.nav-tabs .nav-link {
+    border:none;
+    color: #222;
+}
+.tab-content{
+    background-color: #000000;
+}
+.btn-outline-primary {
+    --bs-btn-color: #000000;
+    --bs-btn-border-color: #000000;
+    --bs-btn-hover-bg: var(--mainColor);
+}
+.card img{
+    height: 300px;
+}
